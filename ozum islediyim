@@ -1,0 +1,15 @@
+n = int(input())
+ust = int(n ** 0.5)
+yan = n // ust
+if(n % 2 == 0):
+    print((ust + 1)*yan+(yan + 1)* ust)
+elif(n == 1):
+    print(4)
+else:
+    if(n == yan * ust):
+        print((ust + 1)*yan+(yan + 1)* ust)
+    else:
+        k = n - (yan * ust)
+        print((ust + 1)*yan+(yan + 1)* ust, k * 4 - (ust - 1))
+print(yan, ust)
+    
